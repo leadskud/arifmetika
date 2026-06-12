@@ -104,6 +104,21 @@
   .stickycta .t b{color:var(--ink);font-size:14px}
   .stickycta .btn{padding:11px 18px;font-size:15px;box-shadow:none}
   @media(max-width:760px){.stickycta{display:flex}}
+
+  /* mobile-CRO (2026-06-12): компактный hero-CTA выше длинного dek на мобайле */
+  @media(max-width:760px){
+    .wrap.hero{display:flex;flex-direction:column}
+    .wrap.hero > *{order:5}
+    .wrap.hero .kicker{order:1}
+    .wrap.hero h1{order:2}
+    .wrap.hero .giftcard{order:3}
+    .wrap.hero .herocta{order:4;margin:14px 0 6px}
+    .wrap.hero .dek{order:6}
+    .wrap.hero .microtrust{order:7}
+    .wrap.hero .byline{order:8}
+    .wrap.hero .herocta .btn.ghost{display:none}
+    .wrap.hero .herocta .btn{width:100%;text-align:center;padding:14px 22px}
+  }
 </style>
 </head>
 <body>
@@ -116,7 +131,7 @@
   </div>
 </header>
 
-<div class="wrap">
+<div class="wrap hero">
   <span class="kicker">Детское развитие · ментальная арифметика · онлайн из любой страны</span>
   <h1>Ментальная арифметика: ребёнок учится считать в уме — и заодно тренирует внимание и память</h1>
   <p class="dek">Ментальная арифметика учит детей 5–14 лет считать в уме большие примеры — а вместе со счётом тренируется концентрация, память и усидчивость. Занятия идут онлайн на русском, подключиться можно из любой страны. Начать проще всего с пробного занятия — посмотреть, как это работает с вашим ребёнком. По кнопке откроется сайт школы «Стартум», где можно оставить заявку на пробное.</p>
